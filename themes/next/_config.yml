@@ -16,13 +16,7 @@ rss:
 # Specify the date when the site was setup
 #since: 2015
 
-# Footer `powered-by` and `theme-info` copyright
-copyright: true
 
-# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
-canonical: true
 
 
 # ---------------------------------------------------------------
@@ -36,7 +30,6 @@ menu:
   #about: /about
   archives: /archives
   tags: /tags
-  #sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
@@ -51,10 +44,8 @@ menu_icons:
   home: home
   about: user
   categories: th
-  schedule: calendar
   tags: tags
   archives: archive
-  sitemap: sitemap
   commonweal: heartbeat
 
 
@@ -114,7 +105,6 @@ font:
   codes:
     external: true
     family:
-    size:
 
 
 
@@ -214,8 +204,6 @@ highlight_theme: normal
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
-# Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
 
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
@@ -240,7 +228,6 @@ auto_excerpt:
 # MathJax Support
 mathjax:
   enable: false
-  per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
@@ -256,19 +243,14 @@ mathjax:
 # Disqus
 #disqus_shortname:
 
-# Hypercomments
-#hypercomments_id:
-
 # Baidu Share
 # Available value:
 #    button | slide
-# Warning: Baidu Share does not support https.
 #baidushare:
 ##  type: button
 
 # Share
 #jiathis:
-# Warning: JiaThis does not support https.
 #add_this_id:
 
 # Share
@@ -305,15 +287,6 @@ facebook_sdk:
   like_button:  #true
   webmaster:    #true
 
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10  # min posts num is 1
-  width: 100%       # default width is 550px
-  scheme: light     # default scheme is light (light or dark)
-
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
@@ -340,40 +313,11 @@ busuanzi_count:
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
-
 # Tencent analytics ID
 # tencent_analytics:
 
-
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: false
-
-# Google Calendar
-# Share your recent schedule to others via calendar page
-#
-# API Documentation:
-# https://developers.google.com/google-apps/calendar/v3/reference/events/list
-calendar:
-  enable: false
-  calendar_id: <required>
-  api_key: <required>
-  orderBy: startTime
-  offsetMax: 24
-  offsetMin: 4
-  timeZone:
-  showDeleted: false
-  singleEvents: true
-  maxResults: 250
-
-# Algolia Search
-algolia_search:
-  enable: false
-  hits:
-    per_page: 10
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
 
 
 
@@ -394,7 +338,6 @@ fancybox: true
 # For example
 #    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 # Be aware that you should use the same version as internal ones to avoid potential problems.
-# Please use the https protocol of CDN files when you enable https on your site.
 vendors:
   # Internal path prefix. Please do not edit it.
   _internal: vendors
@@ -403,39 +346,33 @@ vendors:
   jquery:
 
   # Internal version: 2.1.5
-  # See: http://fancyapps.com/fancybox/
+  # http://fancyapps.com/fancybox/
   fancybox:
   fancybox_css:
 
   # Internal version: 1.0.6
-  # See: https://github.com/ftlabs/fastclick
+  # https://github.com/ftlabs/fastclick
   fastclick:
 
   # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
+  # https://github.com/tuupola/jquery_lazyload
   lazyload:
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
+  # http://VelocityJS.org
   velocity:
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
+  # http://VelocityJS.org
   velocity_ui:
 
   # Internal version: 0.7.9
-  # See: https://faisalman.github.io/ua-parser-js/
+  # https://faisalman.github.io/ua-parser-js/
   ua_parser:
 
-  # Internal version: 4.6.2
-  # See: http://fontawesome.io/
+  # Internal version: 4.4.0
+  # http://fontawesome.io/
   fontawesome:
-
-  # Internal version: 1
-  # https://www.algolia.com
-  algolia_instant_js:
-  algolia_instant_css:
-
 
 
 # Assets
@@ -444,4 +381,4 @@ js: js
 images: images
 
 # Theme version
-version: 5.1.0
+version: 5.0.1
