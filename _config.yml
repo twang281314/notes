@@ -68,6 +68,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github
-  repository: git@git.coding.net:anytao/anytao.git
+  type: git
+  repo: git@git.coding.net:anytao/anytao.git
   branch:  coding-pages   #部署分支
+

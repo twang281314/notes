@@ -1,5 +1,9 @@
 ---
 title: 前端开发环境配置
+categories: 前端
+tags: 
+ - 前端开发环境配置
+ - 前端
 ---
 
 > 新机器开发环境配置
@@ -27,7 +31,7 @@ ssh-keygen -t rsa -C "你的邮箱地址"
 生成后在下面目录  
 C:\Users\你的用户名\\.ssh\id_rsa.pub  
 将 id_rsa.pub 里面的内容复制下 放到github、bitbucket等git代码管理后台的ssh keys 列表中
-
+<!-- more -->
 # node环境配置
 
 ## 下载安装node https://nodejs.org/en/
