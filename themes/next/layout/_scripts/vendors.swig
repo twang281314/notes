@@ -5,6 +5,7 @@
     window.Promise = null;
   }
 </script>
+<script src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 {% set js_vendors = {} %}
 {% set js_vendors.jquery      = 'jquery/index.js?v=2.1.3' %}
