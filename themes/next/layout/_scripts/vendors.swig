@@ -6,19 +6,6 @@
   }
 </script>
 <script src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-<script type="text/javascript">
-window.onbeforeunload = function() {
-		RootCookies.SetCookie("myhk_player_show", "no", -1)
-};
-window.onunload = function() {
-	RootCookies.SetCookie("myhk_player_show", "no", -1)
-};
-</script>
-<script src="https://music.badapple.top/WebConfig.php?Key=346y8Iaabt&v=20161014"></script>
-<script src="https://lib.baomitu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
-<script src="https://music.badapple.top/assets/player/js/scrollbar.js?v=20161014"></script>
-<script src="https://music.badapple.top/assets/player/js/player.js?v=20161014"></script>
 
 {% set js_vendors = {} %}
 {% set js_vendors.jquery      = 'jquery/index.js?v=2.1.3' %}

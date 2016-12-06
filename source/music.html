@@ -1,0 +1,75 @@
+layout: false
+title: "music"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>music</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #f4f5f7;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url(images/bg1.jpg);
+            color: #000;
+        }
+
+        .container{
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:100px;
+            width:600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+   
+        <div id="player5" class="aplayer"></div>
+     
+    </div>
+    <script src="https://cdn.bootcss.com/aplayer/1.5.8/APlayer.min.js"></script>
+    <script>    
+    
+
+var ap5 = new APlayer({
+    element: document.getElementById('player5'),
+    narrow: false,
+    autoplay: false,
+    showlrc: 3,
+    mutex: true,
+    theme: '#ad7a86',
+    mode: 'random',
+    music: [
+        {
+            title: 'あっちゅ～ま青春!',
+            author: '七森中☆ごらく部',
+            url: 'http://devtest.qiniudn.com/あっちゅ～ま青春!.mp3',
+            pic: 'http://devtest.qiniudn.com/あっちゅ～ま青春!.jpg',
+            lrc: 'あっちゅ～ま青春!.lrc'
+        },
+        {
+            title: 'secret base~君がくれたもの~',
+            author: '茅野愛衣',
+            url: 'http://devtest.qiniudn.com/secret base~.mp3',
+            pic: 'http://devtest.qiniudn.com/secret base~.jpg',
+            lrc: 'secret base~君がくれたもの~.lrc'
+        },
+        {
+            title: '回レ！雪月花',
+            author: '小倉唯',
+            url: 'http://devtest.qiniudn.com/回レ！雪月花.mp3',
+            pic: 'http://devtest.qiniudn.com/回レ！雪月花.jpg',
+            lrc: '回レ！雪月花.lrc'
+        }
+    ]
+});
+    </script>
+</body>
+
+</html>

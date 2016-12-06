@@ -30,7 +30,8 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
-  commonweal: /404.html
+  commonweal: /404.html 
+  music: /music.html
 
 
 # Enable/Disable menu icons.
@@ -47,6 +48,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  music: music
 
 
 
